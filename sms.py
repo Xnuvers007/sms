@@ -30,7 +30,7 @@ data = {
 	'key':key
 }
 
-send = s.post("http://sms.payuterus.biz/alpha/send.php", headers=headers, data=data).text
+send = s.post("http://sms.payuterus.biz/alpha/", headers=headers, data=data).text
 
 if 'SMS Gratis Telah Dikirim' in send:
 	print(f"\n  [ Pengiriman sukses ]\n  [ {no} : {msg} ]\n")
